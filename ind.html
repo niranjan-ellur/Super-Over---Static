@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Super Over</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        text-align: center;
+        background-image: url("https://s3.ap-south-1.amazonaws.com/kalvi-education.github.io/front-end-web-development/superover-bg.png");
+        background-size: cover;
+        font-family: "Poppins", sans-serif;
+        color: white;
+      }
+
+      #logo {
+        width: 10vw;
+        margin-top: 5vh;
+      }
+
+      h1 {
+        font-size: 90px;
+        font-weight: 600;
+      }
+
+      section {
+        margin: 10vh auto;
+      }
+
+      #buttons {
+        width: 50%;
+      }
+
+      .ball {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: white;
+        margin: 5px;
+        color: black;
+        line-height: 30px;
+        font-weight: bold;
+        font-size: 2em;
+        text-align: center;
+        padding: 10px;
+      }
+
+      .scoreboard {
+        font-size: 3em;
+        font-weight: bold;
+      }
+
+      .score {
+        padding: 30px;
+        height: auto;
+        border-radius: 20px;
+        margin: 0 50px;
+      }
+
+      .button {
+        width: 100px;
+        font-size: 1.5em;
+        cursor: pointer;
+        margin: 0 30px;
+      }
+
+      #team1 {
+        display: inline-block;
+        background-color: #005fa2;
+      }
+
+      #team2 {
+        display: inline-block;
+        background-color: #1fa83d;
+      }
+
+      #team1-superover,
+      #team2-superover {
+        margin: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <img
+      id="logo"
+      src="https://s3.ap-south-1.amazonaws.com/kalvi-education.github.io/front-end-web-development/so-logo.png"
+    />
+    <section>
+      <div class="score" id="team1">
+        <h1>IND</h1>
+        <div id="team1-superover" class="balls">
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+        </div>
+        <div class="scoreboard">
+          <span id="score-team1">0</span>
+          <span>/</span>
+          <span id="wickets-team1">0</span>
+        </div>
+      </div>
+      <div class="score" id="team2">
+        <h1>PAK</h1>
+        <div id="team2-superover" class="balls">
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+        </div>
+        <div class="scoreboard">
+          <span id="score-team2">0</span>
+          <span>/</span>
+          <span id="wickets-team2">0</span>
+        </div>
+      </div>
+    </section>
+    <section id="buttons">
+      <img
+        class="button"
+        id="strike"
+        src="https://s3.ap-south-1.amazonaws.com/kalvi-education.github.io/front-end-web-development/so-strike-button.png"
+      />
+      <img
+        class="button"
+        id="reset"
+        src="https://s3.ap-south-1.amazonaws.com/kalvi-education.github.io/front-end-web-development/so-reset-button.png"
+      />
+    </section>
+  </body>
+</html>
